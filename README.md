@@ -3,6 +3,8 @@ Secure File Transfer System
 This project implements a secure file transfer system demonstrating key concepts in cryptography including AES symmetric encryption and RSA asymmetric encryption. It provides a simple web interface to upload files, encrypt them securely, and download the decrypted original files using key management.
 Features
 
+Make Sure to make a "Uploads" directory in your project folder 
+
     AES-256 encryption for file content confidentiality
 
     RSA-2048 encryption for secure AES key exchange
