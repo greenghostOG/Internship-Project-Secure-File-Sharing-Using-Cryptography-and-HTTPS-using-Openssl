@@ -72,6 +72,7 @@ Go To the Project Folder :
 Run these Commands :
 
 python -m venv .venv
+
 .venv\Scripts\activate
 
 Install require packages:
