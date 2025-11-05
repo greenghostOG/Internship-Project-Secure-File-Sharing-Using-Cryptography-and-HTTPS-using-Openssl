@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Secure File Transfer - Upload</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body class="container mt-5">
+    <h1 class="mb-4">Upload File for Secure Transfer</h1>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <div class="alert alert-info">
+            {% for message in messages %}
+                <p>{{ message }}</p>
+            {% endfor %}
+        </div>
+    {% endif %}
+    {% endwith %}
+    <form action="{{ url_for('upload_file') }}" method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <input type="file" name="file" class="form-control" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Upload & Encrypt</button>
+    </form>
+</body>
+</html>
