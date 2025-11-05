@@ -21,29 +21,26 @@ Make Sure to make a "Uploads" directory in your project folder
 
 Project Structure
 
-secure_file_transfer/
-│
-├── app.py                 # Main Flask application
-├── requirements.txt       # Python dependencies
-├── README.md              # This documentation
-├── config.py              # Configuration constants
-│
-├── crypto_utils/          # Cryptographic utilities package
-│   ├── aes_crypto.py      # AES encryption/decryption functions
-│   ├── rsa_crypto.py      # RSA key generation, encryption, decryption
-│   └── __init__.py        
-│
-├── templates/             # HTML templates for upload/download pages
-│   ├── index.html
-│   └── download.html
-│
-├── static/                # Static assets (CSS/JS) if needed
-│
-├── uploads/               # Encrypted files and encrypted keys storage
-│
-└── tests/                 # Unit tests for crypto modules
-    ├── test_aes.py
-    └── test_rsa.py
+secure_file_transfer/ 
+	app.py                 # Main Flask application
+	requirements.txt       # Python dependencies
+	README.md              # This documentation
+	config.py              # Configuration constants
+	
+	crypto_utils/          # Cryptographic utilities package
+		aes_crypto.py      # AES encryption/decryption functions
+		rsa_crypto.py      # RSA key generation, encryption, decryption
+		__init__.py   
+		
+	templates/             # HTML templates for upload/download pages
+		index.html
+		download.html
+		
+	uploads/               # Encrypted files and encrypted keys storage
+
+	tests/                 # Unit tests for crypto modules
+		test_aes.py
+		test_rsa.py
 
 Setup Instructions For Linux :
 
